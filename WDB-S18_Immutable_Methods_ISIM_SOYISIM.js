@@ -22,3 +22,14 @@ let filter3= cars.filter(str=>{
   return str.length<5;
 });
 console.log(`Araba isim uzunlugu 5'den kücük olan arabalar: ${filter3}`);
+//4) Ilk harfi "f" olan arabalarin son harfini x olarak degistirin.
+let filter4=Array();
+let filter44= cars.filter(str=>{
+return str[0]==='f';
+  });
+  for(let i=0;i<filter44.length;i++){
+  filter4.push(filter44[i].replace(/.$/,"x"))
+  }
+console.log(`Ilk harfi "f" olan arabalar ${filter44} 'in
+
+son harfleri x olarak degistirildi: ${filter4}`);
