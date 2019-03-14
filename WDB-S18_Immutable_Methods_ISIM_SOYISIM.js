@@ -40,4 +40,16 @@ let filter5= cars.filter(str=>{
 });
 filter5.map((line)=>`My favorite ${line}`)
 console.log(`${filter5.map((line)=>` My favorite ${line}`)}`);
-//6) find() methodu ile filter() method arasindaki farklari yazin.
+/*6) find() methodu ile filter() method arasindaki farklari yazin.
+
+=>filter runs till the end of the array, and invokes its callback on every item;
+ in contrast to find which stops after having found one.
+ When the callback throws an exception on one of these additionally iterated elements, the outcome is different.
+=>filter returns an array , while find return an object
+=> When to use filter?
+.filter() when you want to select a subset of multiple elements from an array.
+
+  When to use find?
+.find() When you want to select a single element from an array.
+
+*/
