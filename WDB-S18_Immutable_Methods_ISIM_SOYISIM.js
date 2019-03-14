@@ -33,3 +33,11 @@ return str[0]==='f';
 console.log(`Ilk harfi "f" olan arabalar ${filter44} 'in
 
 son harfleri x olarak degistirildi: ${filter4}`);
+//5) Uzunlugu 3 ile 6 arasinda olan arabalardan isminin icinde "a" harfi olanlari,
+//isimlerinin önüne "my favorite " gelecek sekilde degistirin ve listeleyin.
+let filter5= cars.filter(str=>{
+  return str.length>3 && str.length<6 && str.includes("a");
+});
+filter5.map((line)=>`My favorite ${line}`)
+console.log(`${filter5.map((line)=>` My favorite ${line}`)}`);
+//6) find() methodu ile filter() method arasindaki farklari yazin.
